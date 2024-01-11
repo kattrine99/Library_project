@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="308.0" prefWidth="373.0" styleClass="AnchorPane" stylesheets="@Css/widows.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Reservation">
+   <children>
+      <Text fill="WHITE" layoutX="28.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Book ID" textAlignment="RIGHT" wrappingWidth="96.13671875" />
+      <TextField fx:id="BookID" layoutX="134.0" layoutY="83.0" promptText="book id" styleClass="text" stylesheets="@Css/widows.css" />
+      <Text fill="WHITE" layoutX="32.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Initial Date" textAlignment="RIGHT" wrappingWidth="88.13671875" />
+      <DatePicker fx:id="InitDate" layoutX="129.0" layoutY="125.0" />
+      <Text fill="WHITE" layoutX="63.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Final Date" />
+      <DatePicker fx:id="FinalDate" layoutX="129.0" layoutY="166.0" />
+      <Button layoutX="47.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#Cancel" prefHeight="79.0" prefWidth="111.0" styleClass="Button" stylesheets="@Css/widows.css" text="Cancel" textFill="WHITE" />
+      <Button layoutX="204.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#Confirm" prefHeight="79.0" prefWidth="111.0" styleClass="Button" stylesheets="@Css/widows.css" text="Confirm" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+.Button
+{
+    -fx-background-color:transparent;
+	-fx-border-color:#595C5B;
+	-fx-border-width:5px 5px 5px 5px;
+	-fx-border-radius:30px;
+	-fx-font-weight:800;
+	-fx-font-size: 20;
+}
+.Button:hover
+{
+	-fx-border-color:#A96B70;
+	-fx-border-width:5px 5px 5px 5px;
+	-fx-text-fill:#A96B70;
+}
+
+.ButVbox
+{
+  -fx-background-color:rgba(67,38,42,0.5);
+  -fx-border-width:0px 0px 3px 0px;
+  -fx-border-color:#E8D9DF;
+
+}
+.ButVbox:hover
+{
+	-fx-border-color:#DB916E;
+	-fx-border-width:3px 3px 3px 3px;
+}
+.ButVbox:pressed
+{
+	-fx-background-color:linear-gradient(#5E3B35,#B68780);
+}
+
+
+.Pane
+{
+ -fx-backgronud-color:#FCE9DA;
+}
+.PaneSt
+{
+	-fx-background-color:#BF927F;
+}
+.ButtonStudent
+ {
+   
+    -fx-background-color: linear-gradient(#A83A1F,#4C4648);
+
+ }
+.ButtonStudent:hover
+{
+    -fx-border-color: linear-gradient(#A83A1F,#EFD1AB);
+	-fx-border-width: 3px 3px 3px 3px;
+    -fx-text-fill: white;
+}
+.ButtonStudent:pressed
+{
+-fx-background-color: linear-gradient(#C69F69,#A18171);
+	
+}
+.SearchS
+{
+	-fx-background-color:#F0C1BB;
+	
+}
+.TableS
+{
+	-fx-background-color:#F9EFE3;
+}

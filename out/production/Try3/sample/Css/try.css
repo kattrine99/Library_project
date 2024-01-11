@@ -1,0 +1,46 @@
+.Button4 {
+   
+    -fx-background-color: linear-gradient(#73422B,#A18171,#4C2C1C );
+
+ }
+.Button4:hover
+{
+    -fx-border-color: linear-gradient(#73422B,#FFDB00);
+	-fx-border-width:4px 4px 4px 4px;
+    -fx-text-fill: white;
+
+}
+.Button4:pressed
+{
+-fx-background-color: linear-gradient(#C69F69,#A18171);
+	
+}
+.AnchorPane
+ {
+     -fx-padding: 10;
+    -fx-background-color:#4C515C;
+
+}
+.Label
+{
+    -fx-font-style: italic;
+    -fx-font-weight: 800;
+
+}
+.Textfield
+{
+	-fx-background-color:transparent;
+	-fx-text-fill:#ffffff;
+	-fx-border-color: #ffffff;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-radius:25px;
+	-fx-cursor-color:#ffffff;
+	
+	
+}
+.Hbox
+{
+	-fx-background-color: rgba(60, 49, 60, 0.5);
+}
+
+

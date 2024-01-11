@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@Css/widows.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModifyBook">
+   <children>
+      <Text fill="WHITE" layoutX="115.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="ID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="IDField" layoutX="144.0" layoutY="65.0" promptText="id" styleClass="text" stylesheets="@Css/widows.css" />
+      <Text fill="WHITE" layoutX="80.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="NameField" layoutX="144.0" layoutY="110.0" promptText="name" styleClass="text" stylesheets="@Css/widows.css" />
+      <Text fill="WHITE" layoutX="73.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Description">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="DescriptionField" layoutX="189.0" layoutY="161.0" prefHeight="78.0" prefWidth="200.0" promptText="text" styleClass="text" stylesheets="@Css/widows.css" />
+      <Text fill="WHITE" layoutX="389.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Quantity">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="QuantityField" layoutX="480.0" layoutY="65.0" prefHeight="25.0" prefWidth="37.0" promptText="1" styleClass="Text" stylesheets="@Css/widows.css" />
+      <Text fill="WHITE" layoutX="412.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 800;" text="Fee">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="FeeField" layoutX="453.0" layoutY="108.0" prefHeight="25.0" prefWidth="55.0" promptText="1.00" styleClass="Text" stylesheets="@Css/widows.css" />
+      <Text fill="#55ff00" layoutX="517.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button layoutX="120.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#Cancel" prefHeight="66.0" prefWidth="131.0" style="-fx-font-weight: 800;" styleClass="Button" stylesheets="@Css/widows.css" text="Cancel" textFill="WHITE" />
+      <Button layoutX="340.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#Confirm" prefHeight="66.0" prefWidth="131.0" style="-fx-font-weight: 800;" styleClass="Button" stylesheets="@Css/widows.css" text="Confirm" textFill="WHITE" />
+   </children>
+</AnchorPane>

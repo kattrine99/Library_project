@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FeeWindow">
+   <children>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="1004.0" styleClass="Hbox" stylesheets="@Css/Tables.css">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#DeleteUserFee" prefHeight="54.0" prefWidth="130.0" style="-fx-font-weight: 800;" styleClass="Button" stylesheets="@Css/Tables.css" text="Delete" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#RefreshTable" prefHeight="54.0" prefWidth="130.0" style="-fx-font-weight: 800;" styleClass="Button" stylesheets="@Css/Tables.css" text="Refresh" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="SearchField" prefHeight="36.0" prefWidth="183.0" styleClass="Search" stylesheets="@Css/Tables.css" />
+            <Button mnemonicParsing="false" onMouseClicked="#SearchFee" prefHeight="43.0" prefWidth="55.0" style="-fx-font-weight: 800;" styleClass="Button" stylesheets="@Css/Tables.css" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" size="1.3em" />
+               </graphic></Button>
+         </children>
+      </HBox>
+      <TableView fx:id="FeeTable" layoutY="64.0" prefHeight="634.0" prefWidth="1004.0" stylesheets="@Css/Tables.css">
+        <columns>
+          <TableColumn fx:id="CUID" prefWidth="111.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="User ID" />
+          <TableColumn fx:id="CUName" prefWidth="228.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="User Name" />
+            <TableColumn fx:id="CBID" prefWidth="124.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="Book ID" />
+            <TableColumn fx:id="CBName" prefWidth="255.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="Book Name" />
+            <TableColumn fx:id="CIDate" prefWidth="109.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="Initial Date" />
+            <TableColumn fx:id="CFDate" prefWidth="103.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="Final Date" />
+            <TableColumn fx:id="CFee" prefWidth="73.0" style="-fx-background-color: #82757F; -fx-font-weight: 800; -fx-font-size: 17;" text="Fee" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

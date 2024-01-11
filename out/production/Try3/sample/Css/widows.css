@@ -1,0 +1,49 @@
+.AnchorPane
+{
+	-fx-background-color: linear-gradient(#453A74,#5F5788,#8660A6);
+}
+.Button
+{
+    -fx-padding: 5 22 5 22;  
+	-fx-background-color: linear-gradient(#545384,#162252);
+	-fx-border-color:#446BA5;
+	-fx-border-width:0px 0px 3px 0px;
+	-fx-font-weight:800;
+}
+.Button:hover
+{
+  -fx-background-color: linear-gradient(#6CA3CA,#5789C6);
+}
+.Button:pressed
+{
+	-fx-background-color: linear-gradient(#813098,#983081);
+}
+.text
+{
+    
+	-fx-background-color:transparent;
+	-fx-text-fill:#ffffff;
+	-fx-border-color: #ffffff;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-radius:25px;
+	-fx-cursor-color:#ffffff;
+	
+}
+
+.Text
+{
+-fx-background-color:transparent;
+	-fx-text-fill:#ffffff;
+	-fx-font-weight:900;
+	-fx-border-color: #7ECF67;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-radius:25px;
+}
+Label
+{
+	-fx-font-style:bold;
+}
+.text-area {
+    -fx-text-fill: green;
+    -fx-text-inner-color: transparent;
+}

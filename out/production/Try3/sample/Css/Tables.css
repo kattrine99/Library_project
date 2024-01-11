@@ -1,0 +1,29 @@
+.anchorpane
+{
+	-fx-background-color:#F5F5F5;
+	
+}
+.Hbox
+{
+	-fx-background-color:#44313F;
+}
+.Button
+{
+	-fx-background-color:linear-gradient(#82757F,#503641);
+}
+.Button:hover
+{
+	-fx-border-color:linear-gradient(#562E39,#DB916E);
+	-fx-border-width:3px 3px 3px 3px;
+	
+}
+.Button:pressed
+{
+	-fx-background-color:#DB916E;
+}
+.Search
+{
+	-fx-background-color: rgba(171, 163, 169);
+	-fx-cursor-color:#080D05;
+	
+}

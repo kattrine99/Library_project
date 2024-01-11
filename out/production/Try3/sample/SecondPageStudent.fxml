@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #CEC7B7;" stylesheets="@Css/SecondPangeStudent.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SecondPageStudent">
+    <left>
+      <AnchorPane prefHeight="766.0" prefWidth="197.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView blendMode="DARKEN" fitHeight="698.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/France-00317-01.jpg" />
+               </image>
+            </ImageView>
+              <VBox prefHeight="698.0" prefWidth="197.0">
+                  <children>
+                      <Button mnemonicParsing="false" onMouseClicked="#BookWindowShow" prefHeight="80.0" prefWidth="200.0" style="-fx-font-weight: 800; -fx-font-size: 18;" styleClass="ButVbox" stylesheets="@Css/SecondPangeStudent.css" text="Books" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.3em" />
+                     </graphic>
+                      </Button>
+                      <Button mnemonicParsing="false" onMouseClicked="#FeeWindowShow" prefHeight="80.0" prefWidth="201.0" style="-fx-font-weight: 800; -fx-font-size: 18;" styleClass="ButVbox" stylesheets="@Css/SecondPangeStudent.css" text="Fee" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="10.0" />
+                          </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" size="1.3em" />
+                     </graphic>
+                      </Button>
+                      <Button mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="80.0" prefWidth="199.0" style="-fx-font-weight: 800; -fx-font-size: 18;" styleClass="ButVbox" stylesheets="@Css/SecondPangeStudent.css" text="Clear" textFill="WHITE">
+                          <VBox.margin>
+                              <Insets top="10.0" />
+                          </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CHECK" size="1.3em" />
+                     </graphic>
+                      </Button>
+                  </children>
+              </VBox>
+         </children>
+      </AnchorPane>
+    </left>
+    <top>
+      <AnchorPane BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="1208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/fon.jpg" />
+               </image>
+            </ImageView>
+              <HBox alignment="CENTER_LEFT" layoutX="8.0" prefHeight="102.0" prefWidth="1200.0">
+                  <children>
+                      <Button mnemonicParsing="false" onMouseClicked="#LogOut" prefHeight="86.0" prefWidth="174.0" styleClass="Button" stylesheets="@Css/SecondPangeStudent.css" text="Log out" textFill="#595c5b">
+                          <HBox.margin>
+                              <Insets bottom="3.0" left="10.0" right="10.0" />
+                          </HBox.margin>
+                  </Button>
+                      <VBox prefHeight="83.0" prefWidth="319.0">
+                          <children>
+                              <Label fx:id="LabelName" prefHeight="33.0" prefWidth="208.0" style="-fx-font-weight: 800; -fx-font-size: 20;" styleClass="text" text="Name :">
+                                  <VBox.margin>
+                                      <Insets bottom="7.0" left="30.0" top="7.0" />
+                                  </VBox.margin>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                              <Label fx:id="LabelStatus" prefHeight="32.0" prefWidth="211.0" style="-fx-font-weight: 800; -fx-font-size: 20;" text="Status :">
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                          </children>
+                          <HBox.margin>
+                              <Insets bottom="5.0" right="60.0" />
+                          </HBox.margin>
+                      </VBox>
+                  </children>
+              </HBox>
+         </children>
+      </AnchorPane>
+    </top>
+</BorderPane>

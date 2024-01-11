@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="698.0" prefWidth="1004.0" styleClass="anchorpane" stylesheets="@Css/Tables.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserWindowLibrarian">
+    <children>
+        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="1004.0" styleClass="TabHbox" stylesheets="@Css/SecondPageLibr.css">
+            <children>
+                <Button mnemonicParsing="false" onMouseClicked="#AddUser" prefHeight="54.0" prefWidth="123.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" text="Add user" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onMouseClicked="#Modify" prefHeight="55.0" prefWidth="123.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" text="Modify user" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onMouseClicked="#DeleteUser" prefHeight="55.0" prefWidth="123.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" text="Delete user" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onMouseClicked="#Refresh" prefHeight="55.0" prefWidth="123.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" text="Refresh table" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="55.0" prefWidth="123.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" text="Clear table" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="SearchField" alignment="CENTER" prefHeight="22.0" prefWidth="149.0" styleClass="SearchLib" stylesheets="@Css/SecondPageLibr.css">
+                    <HBox.margin>
+                        <Insets left="5.0" />
+                    </HBox.margin></TextField>
+                <Button mnemonicParsing="false" onMouseClicked="#Search" prefHeight="38.0" prefWidth="54.0" styleClass="ButTab" stylesheets="@Css/SecondPageLibr.css" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" size="1.3em" />
+               </graphic></Button>
+            </children>
+        </HBox>
+        <TableView fx:id="TableUsers" layoutY="65.0" prefHeight="634.0" prefWidth="1004.0" styleClass="PaneLibT" stylesheets="@Css/SecondPageLibr.css">
+            <columns>
+                <TableColumn fx:id="CID" prefWidth="119.99996948242188" style="-fx-background-color: #00AAB2; -fx-font-weight: 800; -fx-font-size: 17; -fx-text-fill: white;" text="ID" />
+                <TableColumn fx:id="CName" prefWidth="277.0" style="-fx-background-color: #00AAB2; -fx-font-weight: 800; -fx-font-size: 17; -fx-text-fill: white;" text="Name" />
+                <TableColumn fx:id="CPassword" prefWidth="293.0" style="-fx-background-color: #00AAB2; -fx-font-weight: 800; -fx-font-size: 17; -fx-text-fill: white;" text="Password" />
+                <TableColumn fx:id="CStatus" minWidth="0.0" prefWidth="313.0" style="-fx-background-color: #00AAB2; -fx-font-weight: 800; -fx-font-size: 17; -fx-text-fill: white;" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

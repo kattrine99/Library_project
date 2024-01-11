@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="452.0" prefWidth="410.0" styleClass="AnchorPane" stylesheets="@Css/widows.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBook">
+    <children>
+        <ImageView disable="true" fitHeight="304.0" fitWidth="401.0" layoutY="37.0" nodeOrientation="INHERIT" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+
+            <effect>
+                <GaussianBlur radius="2.91" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Text fill="WHITE" layoutX="112.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="35.13671875">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="74.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="63.13671875">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="26.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="110.13671875">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="IDField" layoutX="157.0" layoutY="70.0" promptText="book id" styleClass="text" stylesheets="@Css/widows.css">
+            <effect>
+                <ColorAdjust />
+            </effect>
+        </TextField>
+        <TextField fx:id="NameField" layoutX="157.0" layoutY="111.0" promptText="book name" styleClass="text" stylesheets="@Css/widows.css" />
+        <Button layoutX="65.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#CancelAction" prefHeight="61.0" prefWidth="110.0" styleClass="Button" stylesheets="@Css/widows.css" text="Cancel" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="232.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#ConfirmAction" prefHeight="61.0" prefWidth="110.0" styleClass="Button" stylesheets="@Css/widows.css" text="Confirm" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="DescriptionField" alignment="TOP_LEFT" layoutX="150.0" layoutY="154.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="115.0" prefWidth="207.0" promptText="Text" styleClass="text" stylesheets="@Css/widows.css" />
+        <Text fill="WHITE" layoutX="22.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="84.13671875">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="QuantityField" layoutX="106.0" layoutY="293.0" prefHeight="33.0" prefWidth="42.0" promptText="0" styleClass="Text" text="1">
+            <padding>
+                <Insets bottom="1.0" left="9.0" right="1.0" top="1.0" />
+            </padding>
+        </TextField>
+        <Text fill="WHITE" layoutX="179.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee" wrappingWidth="42.13671875">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="FeeField" layoutX="221.0" layoutY="293.0" prefHeight="25.0" prefWidth="63.0" promptText="1.00" styleClass="Text" text="1.00" />
+        <Text fill="#48ff00" layoutX="294.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="23.999998176050212">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

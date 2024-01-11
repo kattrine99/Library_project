@@ -1,0 +1,71 @@
+.BorPane
+{
+	-fx-background-color:#BEE9EB;
+}
+.ButLib
+{
+	-fx-background-color:rgba(45,97,108,0.4);
+	-fx-border-color:#00AAB2;
+	-fx-border-width: 0px 0px 3px 0px;
+	-fx-font-weight:800;
+	-fx-font-size:18;
+}
+.ButLib:hover
+{
+	-fx-border-color:#7ECF67;
+	-fx-border-width: 3px 3px 3px 3px;
+}
+.ButLib:pressed
+{
+	-fx-background-color:#87A7C0;
+}
+.labelLib
+{
+	-fx-font-weight:800;
+	-fx-font-style:italic;
+	-fx-font-size:16;
+}
+.LogoutBut
+{
+	-fx-background-color:transparent;
+	-fx-font-weight:800;
+	-fx-font-size:17;
+	-fx-border-color:#FCE9DA;
+	-fx-border-width: 4px 4px 4px 4px;
+	-fx-border-radius:30px;
+	-fx-text-fill:#FCE9DA;
+	
+}
+.LogoutBut:hover
+{
+	-fx-border-color:#A873E8;
+	-fx-borer-width:3px 3px 3px 3px;
+	-fx-text-fill:#A873E8;
+
+	
+}
+.ButTab
+{
+	-fx-background-color:linear-gradient(#E2F5F6,#005E7A);
+	-fx-font-weight:800;
+	-fx-font-size:15;
+	-fx-text-fill:#Ffffff;
+}
+.ButTab:hover
+{
+ -fx-border-color:linear-gradient(#22737E,#00FF00);
+ -fx-border-width:3px 3px 3px 3px;
+
+	
+}
+.ButTab:pressed
+{
+-fx-background-color:linear-gradient(#B2EEDE,#1ACC9C);
+	
+}
+.SearchLib
+{-fx-background-color:#BEDDE2;}
+.PaneLibT
+{-fx-background-color:#E8F0F2;}
+.TabHbox
+{-fx-background-color:#22737E;}
